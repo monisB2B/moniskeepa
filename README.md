@@ -17,3 +17,15 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## Bulk product data fetch
+
+Create a text file `server/asins.txt` with one ASIN per line and ensure
+`KEEPA_KEY` is defined in your environment. Then run:
+
+```bash
+npm run fetch --prefix server
+```
+
+The script retrieves product data in batches of 100 ASINs and writes each
+JSON object to `server/products.jsonl`.
