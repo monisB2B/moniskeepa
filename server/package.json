@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "build": "echo \"Server build step not required\""
+    "build": "echo \"Server build step not required\"",
+    "fetch": "node fetchAllAsins.js"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
